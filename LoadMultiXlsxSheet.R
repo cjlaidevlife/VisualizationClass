@@ -1,8 +1,5 @@
-# you can use source() open this script.But you need to attention your dir.
 library(openxlsx)
-library(tidyverse)
 library(readxl)
-library(DescTools)
 #---
 path <- readline("path:");# Key in your data path.
 findWord <- readline("keyword:");# Key in your dataname or keyword.
