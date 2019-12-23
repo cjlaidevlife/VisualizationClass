@@ -5,9 +5,9 @@
 path <- readline("Where are you data(path):");
 findWord <- readline("Enter keywords:");
 dfName <- readline("Nickname:");# Name your sheet Nickname from data.
-setwd(path) 
+setwd(path)
 #---Check data---# 
-foderfile <- list.files(path = path)
+foderfile <- list.files()
 wantdata <- grep(findWord,foderfile) # your dataname or keyword.
 xlsxNumber<- length(readxl::excel_sheets(foderfile[wantdata]))
 dfName <- paste0(dfName,1:xlsxNumber)
