@@ -1,18 +1,12 @@
-# you can use source() open "LoadMultiXlsxSheet.R" script.But you need to attention your dir.
-# please enter your xlsx data dir,dataname or keyword,create sheet title.
-#source("~/LoadMultiXlsxSheet.R")
-source("LoadMultiXlsxSheet.R")
-setwd("~/Desktop/data_visualization")
+#---package---#
 library(tidyverse)
 library(openxlsx)
 library(gganimate)
 library(plotly)
-#library(reshape2)
-# load data
-setwd("/Users/max716134/Downloads")
+#---load csv---#
+setwd("~/Desktop/data_visualization")
 n <- list.files()
 df <- read.csv(n[28],header = FALSE)
-
 # data ETL
 df <- df[,-1]
 dfName_v<- as.vector(t(df[2,]))
@@ -42,7 +36,9 @@ ggplot(df_ShihChien,aes(男學生總數,女學生總數))+
              family="黑體-繁 中黑",
              fontface = "bold",
              colour = "white",
-             fill="blue")+
+             fill="blue",
+             vjust="inward",
+             hjust="inward")+
   geom_label(data= df_ShihChien%>%
                filter(女學生總數==female_n),
              label="觀光管理學系",
@@ -56,23 +52,41 @@ ggplot(df_ShihChien,aes(男學生總數,女學生總數))+
              family="黑體-繁 中黑",
              fontface = "bold",
              colour = "white",
-             fill="green")+
-  theme(text=element_text(family="黑體-繁 中黑",size=14))
-
+             fill="green",
+             vjust="inward",
+             hjust="inward")+
+  geom_label(x=0,y=0,
+             label="最小值",
+             family="黑體-繁 中黑",
+             fontface = "bold",
+             colour = "white",
+             fill="gray",
+             vjust="inward",
+             hjust="inward")+
+  theme(text=element_text(family="黑體-繁 中黑"))
 
 # mean
 male_mean<- mean(df_ShihChien$男學生總數)
 female_mean<- mean(df_ShihChien$女學生總數)
+male_median <- median(df_ShihChien$男學生總數)
+female_median <- median(df_ShihChien$女學生總數)
+
 ggplot(df_ShihChien,aes(男學生總數,女學生總數))+
   geom_point(aes(size=學生總數),alpha=0.7)+
   geom_hline(yintercept=female_mean, color="red", size=5,alpha=0.5) +
   geom_vline(xintercept=male_mean, color="blue", size=5,alpha=0.5) +
+  geom_hline(yintercept=female_median, color="red", size=1) +
+  geom_vline(xintercept=male_median, color="blue", size=1) +
+  geom_label(data= df_ShihChien%>%
+               filter(系所名稱=="資訊科技與管理學系" & 學制=="學士班(日間)"),
+             label="資訊科技與管理學系",
+             family="黑體-繁 中黑",
+             fontface = "bold",
+             colour = "white",
+             fill="green",
+             vjust="inward",
+             hjust="inward")+
   theme(text=element_text(family="黑體-繁 中黑",size=14))
-
-ggplot(df_ShihChien, aes(學生總數,fill=學制)) +
-  geom_histogram()+
-  theme(text=element_text(family="黑體-繁 中黑",size=14))
-
 
 # general+++++++++++++++++++++++++++++++++++++++++++++++++
 
