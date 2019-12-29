@@ -1,10 +1,3 @@
-#---install---#
-#install.packages("openxlsx")
-#install.packages("readxl")
-#install.packages("tidyverse")
-#install.packages("openxlsx")
-#install.packages("gganimate")
-#install.packages("plotly")
 #---Input---#
 path <- readline("Where are you data(path):");
 findWord <- readline("Enter keywords:");
