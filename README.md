@@ -112,15 +112,8 @@ digraph hierarchy {
 ### 步驟四 探索視覺化
 
 #### (一)常見的圖表 [<kbd>請點我</kbd>](https://datavizcatalogue.com/index.html)   
+>可以依照使用情境、目的的不同，選擇最合適的圖表。  
 
-
-> 當你要進行分析，但遇上資料量很大，無從下手的時候...
-
-[![](https://i.imgur.com/4I3yB0r.png)](https://udb.moe.edu.tw/Historical)  
-
-
-
->可以依照使用情境、目的的不同，選擇最合適的圖表。
 #### (二)靜態的圖 [<kbd>請點我</kbd>](https://i.imgur.com/zuK2vOu.png)  
 
 >主要用在平面的場景，例如書面報告。
