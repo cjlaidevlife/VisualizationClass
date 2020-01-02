@@ -1,8 +1,8 @@
 #+++package+++#
 library(tidyverse)
-library(openxlsx)
 library(gganimate)
 library(plotly)
+library(openxlsx)
 #+++LoadData+++#
 setwd("~/Desktop/data_visualization/dataset")
 n <- list.files()
