@@ -2,14 +2,6 @@
 title: 數據視覺化筆記
 tags: Visualization,note    
 disqus: HackMD # 開啟留言    
-slideOptions:   
-  allottedMinutes: 40 # 計時器
-  parallaxBackgroundImage: 'https://i.gifer.com/BXe0.gif' # 背景圖   
-  parallaxBackgroundSize: "1500px 1000px" # 背景圖   大小
-  #transition: 'fade' #轉場模式
-  #spotlight: # 簡報筆模式
-   #enabled: true
-  # F11:全螢幕、S:看小抄模式、ESC:大綱模式
 ---
 
 # 資料視覺化    
