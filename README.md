@@ -53,7 +53,7 @@
 
 #### (二)欄位命名
 
-```graphviz
+```graphviz . 
 digraph dfd2{
         node[shape=record]
         subgraph{
@@ -74,7 +74,7 @@ digraph dfd2{
         enti2 -> proc2
         enti3 -> proc3
         enti4 -> proc4
-}
+} . 
 ```
 
 > 盡可能讓圖表上的資訊清楚、一目瞭然。
@@ -145,11 +145,11 @@ digraph hierarchy {
 
 ## 五、進階視覺化
 
-### (一) DECK GL [<kbd>請點我</kbd>](https://deck.gl/#/)
+### (一) DECK GL [<kbd>好站連結</kbd>](https://deck.gl/#/)
 ![](https://i.imgur.com/6klp5cg.jpg)
-### (二) D3 js [<kbd>請點我</kbd>](https://d3js.org/)
+### (二) D3 js [<kbd>好站連結</kbd>](https://d3js.org/)
 ![](https://i.imgur.com/0ixRRbS.jpg)
-### (三) ECHARTS [<kbd>請點我</kbd>](https://echarts.apache.org/en/index.html)
+### (三) ECHARTS [<kbd>好站連結</kbd>](https://echarts.apache.org/en/index.html)
 ![](https://i.imgur.com/0g9q2Lt.jpg)  
 
 ## 六、採用教材
