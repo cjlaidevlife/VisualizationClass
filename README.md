@@ -51,52 +51,13 @@
 
 > 轉為長資料能夠提升圖形『比較』的效果。
 
-#### (二)欄位命名
-
-```graphviz . 
-digraph dfd2{
-        node[shape=record]
-        subgraph{
-        enti1 [label="geo.name" shape=box];
-        enti2 [label="indicator.name" shape=box];
-        enti3 [label="geo" shape=box];
-        enti4 [label="indicator" shape=box];
-        }
-        subgraph cluster_level1{
-                        label ="更改後";
-                        proc1 [label="{<f0> New Name|<f1> 國家名稱\n\n\n}" shape=Mrecord];
-                        proc2 [label="{<f0> New Name|<f1> 指標種類\n\n\n}" shape=Mrecord];
-                        proc3 [label="{<f0> New Name|<f1> 國家代碼\n\n\n}" shape=Mrecord];
-                        proc4 [label="{<f0> New Name|<f1> 指標代碼\n\n\n}" shape=Mrecord];
-
-        }
-        enti1 -> proc1
-        enti2 -> proc2
-        enti3 -> proc3
-        enti4 -> proc4
-} . 
-```
-
-> 盡可能讓圖表上的資訊清楚、一目瞭然。
+#### (二)欄位命名  
+![](https://i.imgur.com/rgRwmhs.png)  
+> 盡可能讓圖表上的資訊清楚、一目瞭然。  
 
 
-#### (三)遺失值處理:
-
-```graphviz
-digraph hierarchy {
-
-                nodesep=1.0
-                node [color=Red,fontname=Courier,shape=box] 
-                edge [color=Blue, style=dashed]
-
-                遺失值->{剔除資料 自行定義}
-                自行定義->{類別 數值}
-                數值 ->{取近似值 補上0}
-                類別 ->{補上NULL}
-                {rank=same;數值 類別} 
-                {rank=same;取近似值 補上0} 
-}  
-```
+#### (三)遺失值處理:  
+![](https://i.imgur.com/wwrZuOY.png)  
 > 資料量越少，遺失值處理越加重要!
 
 ### 步驟三 資料分佈
