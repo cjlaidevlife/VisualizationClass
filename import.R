@@ -1,2 +1,0 @@
-#---xlsx---#
-source("LoadMultiXlsxSheet.R")
