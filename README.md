@@ -1,6 +1,6 @@
 # 資料視覺化    
 
->老實說，我認為自己對於資料分析與視覺化，沒有什麼天份。這篇筆記僅憑藉自己的熱情，胡搞瞎搞一段時間後，所歸納出的一點小小心得。雖然這篇筆記可能有交代的不清楚的地方，又或者觀念不夠正確。但我還是希望透過這篇筆記，陪伴那些即將踏入資料科學，特別為從未接觸過資料視覺化或是資料分析的菜鳥所準備。希望大家或多或少，都可以在這裡有所收穫。有空閒我就會添加繼續新的內容，如果有任何的疑問，歡迎來信指教。
+>這是用來協助我整理一些基本的資料視覺化導讀，希望透過這篇文章不僅可以讓我整理觀念，並能夠為資料視覺化初學者釐清一些思路，並用來協助課堂教學分享所用。裡面尚有許多需要改進的地方，目前也還在摸索如何善用github這個平台，如果有任何好的建議我都會虛心受教。
 
 1.想知道如何使用Hack MD請前往下面連結：[好站連結](https://hackmd.io/@hackmd/BJvtP4zGX)  
 2.如何使用 Hack MD 的簡報(Slide)功能請前往下面連結：[好站連結](https://hackmd.io/@hackmd/HJO6srUx)  
@@ -79,18 +79,18 @@
 #### (一)常見的圖表 [<kbd>請點我</kbd>](https://datavizcatalogue.com/index.html)   
 >可以依照使用情境、目的的不同，選擇最合適的圖表。  
 
-#### (二)靜態的圖 [<kbd>請點我</kbd>](https://i.imgur.com/zuK2vOu.png)  
+#### (二)靜態的圖    
+![](https://i.imgur.com/zuK2vOu.png)  
 
 >主要用在平面的場景，例如書面報告。
 
-#### (三)自動的圖 [<kbd>請點我</kbd>](https://imgur.com/rY9At2k.gif)  
-
+#### (三)自動的圖    
+![](https://imgur.com/rY9At2k.gif)  
 >用來吸引注意力，但解釋時有拘限性。
 
 #### (四)互動的圖 [<kbd>請點我</kbd>](https://leemeng.tw/gapminder.html)  
 
 >適合演講或報告用來拉近觀眾距離。
-
 >特別感謝LeeMeng願意讓我放上他所做的互動式視覺化部落格。
 
 ## 四、解釋視覺化
@@ -103,26 +103,21 @@
 | 步驟三 | 級別 | 詳細程度？比例尺？年？月？日？ |
 | 步驟四 | 焦距 | 圖表的重點？趨勢、模式、異常？哪些數據要突出？ |
 | 步驟五 | 聽眾 | 你想表達出什麼訊息？丟出今天想探討的議題？ |
-### 4.2 影片DEMO
+### 4.2 影片觀賞
 [<kbd>YOUTUBE</kbd>](https://youtu.be/jbkSRLYSojo)
 ###### FROM : Hans Rosling's 200 Countries, 200 Years, 4 Minutes - The Joy of Stats - BBC Four
 
+## 五、進階視覺化   
 
-## 五、進階視覺化
-
-### (一) DECK GL [<kbd>好站連結</kbd>](https://deck.gl/#/)
-![](https://i.imgur.com/6klp5cg.jpg)
-### (二) D3 js [<kbd>好站連結</kbd>](https://d3js.org/)
-![](https://i.imgur.com/0ixRRbS.jpg)
-### (三) ECHARTS [<kbd>好站連結</kbd>](https://echarts.apache.org/en/index.html)
-![](https://i.imgur.com/0g9q2Lt.jpg)  
+1. DECK GL [<kbd>好站連結</kbd>](https://deck.gl/#/)
+2. D3 js [<kbd>好站連結</kbd>](https://d3js.org/)
+3. ECHARTS [<kbd>好站連結</kbd>](https://echarts.apache.org/en/index.html)
 
 ## 六、採用教材
 
-[![](https://images-eu.ssl-images-amazon.com/images/I/51wnowwIoXL._SY346_.jpg)](https://www.amazon.co.uk/Data-Visualization-Made-Simple-Insights-ebook/dp/B07HS23LTN)  
+書名：[<kbd>Data Visualization Made Simple</kbd>](https://www.amazon.co.uk/Data-Visualization-Made-Simple-Insights-ebook/dp/B07HS23LTN)  
 
-###### Book : Data Visualization Made Simple
-**圖片來源:AMAZON**  
+
 
 ---  
 
