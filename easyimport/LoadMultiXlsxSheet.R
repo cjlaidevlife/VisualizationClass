@@ -1,4 +1,5 @@
-#用來簡單解決輸入單xlsx檔案有多個Sheet的導入問題。
+# 小提示：可以在其他腳本利用source()函數呼叫
+# 用來簡單解決輸入單xlsx檔案有多個Sheet的導入問題。
 #---Input---#
 path <- readline("Where are you data(path):");
 findWord <- readline("Enter keywords:");
