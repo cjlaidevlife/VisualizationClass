@@ -3,7 +3,6 @@ library(tidyverse)
 library(gganimate)
 library(plotly)
 library(openxlsx)
-
 #+++讀取資料+++#
 setwd("~/Desktop/data_visualization/dataset")
 n <- list.files()
